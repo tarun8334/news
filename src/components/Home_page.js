@@ -55,6 +55,7 @@ function Home_page() {
 
              </div>
              {/* <div className='back6'> */}
+             <div className='news_flex'>
              <div className='row back6'>
                  <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
                  <div className='col-3 new_imgp'>
@@ -88,6 +89,37 @@ function Home_page() {
                  <img src={new_img}></img>
 
                  </div>
+
+             </div>
+
+             <div className='row back6'>
+                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                 <div className='col-3 new_imgp'>
+                 <img src={new_img}></img>
+
+                 </div>
+
+             </div>
+
+
+             <div className='row back6'>
+                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                 <div className='col-3 new_imgp'>
+                 <img src={new_img}></img>
+
+                 </div>
+
+             </div>
+
+
+             <div className='row back6'>
+                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                 <div className='col-3 new_imgp'>
+                 <img src={new_img}></img>
+
+                 </div>
+
+             </div>
 
              </div>
             <div className='row bottom_bar'>

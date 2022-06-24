@@ -61,10 +61,10 @@ function Home_page() {
                     <div className='col-8'></div>
                 </div>
             </div>
-            {/* <div className='row top_option'>
+            <div className='row top_option'>
                  <div className='col-6  top_option_coin'>Top coins</div>
                  <div className='col-6 top_option_news'>Top news</div>
-             </div> */}
+             </div>
 
             <div className='row'>
                 <div className='col-6 story_heading'>Top Stories</div>

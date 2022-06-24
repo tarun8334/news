@@ -154,7 +154,8 @@ function Home_page() {
                     <img src={home}></img>
 
                 </div>
-                <div className='col-2'>
+                <div className='col-1'></div>
+                <div className='col-1'>
                     <img src={orders}></img>
                     
                 </div>

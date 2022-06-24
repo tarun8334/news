@@ -156,6 +156,7 @@ function Home_page() {
                 </div>
                 <div className='col-2'>
                     <img src={orders}></img>
+                    
                 </div>
                 <div className='col-1'></div>
                 <div className='col-2 reverse_image'>

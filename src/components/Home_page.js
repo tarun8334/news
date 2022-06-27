@@ -80,7 +80,7 @@ function Home_page() {
                         ? data.results.map((news) => (
                             // {console.log(news)}
 
-                            <NewsArticle data={news} key={news.image_url} />
+                            <NewsArticle  data={news} key={news.image_url} />
                         ))
                         : "Loading"}
                 {/* </div> */}

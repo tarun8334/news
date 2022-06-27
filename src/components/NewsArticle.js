@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function NewsArticle({ data }) {
   return (
-    <div className="row back6">
+    <div className="row back6" onClick={() => window.open(data.link)}>
       <h1 className="head_news col-9">{data.title}</h1>
       {/* <p className="news__desc">{data.description}</p> */}
       {/* <span className="news__author">{data.author}</span> <br /> */}

@@ -124,7 +124,8 @@ align-items: center;
 
 .bottom_bar{
     align-items: center;
-    height: 1vh;
+    height: 15%;
+    bottom: 0px;
 }
 
 .swap{

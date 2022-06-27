@@ -27,7 +27,7 @@ function Home_page() {
     useEffect(() => {
         axios
             .get(
-                `http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${apiKey}`
+                `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${apiKey}`
             )
             .then((response) => setData(response.data))
             .catch((error) => console.log(error));

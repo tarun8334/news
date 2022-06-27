@@ -22,13 +22,11 @@ export const NewsContext = createContext();
 function Home_page() {
     const [data, setData] = useState();
 
-    const apiKey = "1c31e0e165df4c1fa4137f14a41db9ca";
-
+    // const apiKey = "1c31e0e165df4c1fa4137f14a41db9ca";
     useEffect(() => {
         axios
             .get(
-                `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${apiKey}`
-            )
+               `https://newsdata.io/api/1/news?apikey=pub_872241608586560e6ce3e3865b639462ad74&country=in`           )
             .then((response) => setData(response.data))
             .catch((error) => console.log(error));
     }, []);
@@ -79,8 +77,10 @@ function Home_page() {
             <div className='news_flex'>
                 {/* <div className="row back6"> */}
                     {data
-                        ? data.articles.map((news) => (
-                            <NewsArticle data={news} key={news.url} />
+                        ? data.results.map((news) => (
+                            // {console.log(news)}
+
+                            <NewsArticle data={news} key={news.image_url} />
                         ))
                         : "Loading"}
                 {/* </div> */}

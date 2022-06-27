@@ -12,7 +12,7 @@ function NewsArticle({ data }) {
       {/* <span className="news__source">{data.source.name}</span> */}
       <div className='col-3 '>
           {/* <div></div> */}
-                 <img className="new_imgp" src={data.urlToImage}></img>
+                 <img className="new_imgp" src={data.image_url}></img>
 
                  </div>
 

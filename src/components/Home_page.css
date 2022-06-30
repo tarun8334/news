@@ -28,6 +28,8 @@
 .upper_box{
     background: #252A4D;
 border-radius: 12px;
+margin-left: 4vw;
+margin-right: 4vw;
 }
 
 
@@ -78,18 +80,22 @@ color: #7661F6;
 .top_option{
     background: #252A4D;
     border-radius: 12px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+
 }
 
 .top_option_coin{
-font-family: 'Gilroy-SemiBold';
+    font-family: 'Gilroy-Regular';
 font-size: 14px;
 line-height: 12px;
 /* identical to box height, or 100% */
 padding:18px;
 text-align: center;
 letter-spacing: 0.1em;
+/* border-radius: 12px; */
 
-color: #F8F9FA;
+/* color: #F8F9FA; */
 }
 .top_option_news{
     font-family: 'Gilroy-Regular';
@@ -100,8 +106,9 @@ color: #F8F9FA;
     /* text-align: right; */
     letter-spacing: 0.1em;
     padding:18px;
-    color: #B9C1D9;
-    
+    /* color: #B9C1D9; */
+    /* border-radius: 12px; */
+
     
 }
 .home_image{
@@ -144,15 +151,14 @@ color: #FFFFFF;
 }
 .head_news{
     font-family: 'Gilroy-Medium';
-font-size: 16px;
-line-height: 20px;
+font-size: 1.8vh;
+line-height: 2vh;
 /* or 125% */
-
-
+margin-top: 1vh;
 color: #FFFFFF;
 }
 .back6{
-height : 80px;
+height : 11vh;
 
     background: #252A4D;
 border-radius: 12px;
@@ -161,7 +167,7 @@ padding-right: 10px;
 padding-left: 10px;
 margin-left: 10px;
 margin-right: 10px;
-margin-top: -5px;
+margin-top: 0px;
 margin-bottom: 20px;
 }
 .new_imgp{
@@ -173,9 +179,27 @@ margin-bottom: 20px;
     width: 120%;
     height: 40%;
     margin-left: -10px;
+    border-radius: 4px;
+
 }
 .news_flex{
     height : 42vh;
 width  : 100%;
 overflow: scroll;
+}
+
+.color56{
+    background: #161A33;
+    border-radius: 12px;
+
+}
+.color55{
+    background: #252A4D;
+    border-radius: 12px;
+    /* font-family: 'Gilroy-SemiBold'; */
+
+}
+.t123{
+        font-family: 'Gilroy-SemiBold';
+
 }

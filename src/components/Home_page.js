@@ -17,6 +17,7 @@ import refresh from './refresh.png';
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import NewsArticle from './NewsArticle';
+import Topcoins from './Topcoins';
 
 export const NewsContext = createContext();
 function Home_page() {
@@ -35,6 +36,20 @@ function Home_page() {
     const handlechange = () => {
         console.log("hello");
     }
+
+    const [swap, setSwap] = useState(false)
+    function Coinb() {
+      var a = true;
+      setSwap(a);
+    }
+  
+    function Newsb() {
+        var a = false;
+        setSwap(a);
+      }
+  
+
+if(swap == true){
 
     return (
         <div className='back3'>
@@ -60,11 +75,14 @@ function Home_page() {
                 </div>
             </div>
             <div className='row top_option'>
-                 <div className='col-6  top_option_coin'>Top coins</div>
-                 <div className='col-6 top_option_news'>Top news</div>
+                 <div className='col-6  top_option_coin color55 t123' onClick={() => Coinb()}>TOP COINS</div>
+                 {/* <div className='col-1'></div> */}
+                 <div className='col-6 top_option_news color56' onClick={() => Newsb()}>TOP NEWS</div>
              </div>
-
-            <div className='row'>
+             <div className='news_flex'>
+                      <Topcoins></Topcoins>
+                                </div>
+            {/* <div className='row'>
                 <div className='col-6 story_heading'>Top Stories</div>
                 <div className='col-5'></div>
                 <div className='col-1'>
@@ -73,16 +91,14 @@ function Home_page() {
                 </div>
 
             </div>
-            {/* <div className='back6'> */}
             <div className='news_flex'>
-                {/* <div className="row back6"> */}
                     {data
                         ? data.results.map((news) => (
-                            // {console.log(news)}
 
                             <NewsArticle  data={news} key={news.image_url} />
                         ))
-                        : "Loading"}
+                        : "Loading"}            </div> */}
+
                 {/* </div> */}
                 {/* <div className='row back6'>
                  <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
@@ -148,7 +164,6 @@ function Home_page() {
 
              </div> */}
 
-            </div>
             <div className='row bottom_bar'>
                 <div className='col-2 home_image'>
                     <img src={home}></img>
@@ -176,6 +191,148 @@ function Home_page() {
 
         </div>
     )
+    }else{
+
+        return (
+            <div className='back3'>
+                {console.log(data)}
+    
+                <div className='row top_bar'>
+                    <div className='col-1 polygon'>
+                        <img src={polygon} onClick={() => handlechange()}></img>
+                    </div>
+                    <div className='col-10'></div>
+                    <div className='col-1 dollar'>
+                        <img src={dollar}></img>
+                    </div>
+                </div>
+                <div className='upper_box'>
+                    <div className='row upper_box_text1'>Invite and Earn $10 worth Bitcoin!</div>
+                    <div className='row upper_box_text2'>Earn $10 worth of BTC whenever your friend makes their first trade on dripp. </div>
+                    <div className='row upper_box_button'>
+                        <div className='col-4 upper_box_button2'>
+                            Invite Friends
+                        </div>
+                        <div className='col-8'></div>
+                    </div>
+                </div>
+                <div className='row top_option'>
+                <div className='col-6  top_option_coin color56' onClick={() => Coinb()}>TOP COINS</div>
+                 <div className='col-6 top_option_news color55 t123' onClick={() => Newsb()}>TOP NEWS</div>
+                 </div>
+    
+                <div className='row'>
+                    <div className='col-6 story_heading'>Top Stories</div>
+                    <div className='col-5'></div>
+                    <div className='col-1'>
+                        <img src={refresh}></img>
+    
+                    </div>
+    
+                </div>
+                {/* <div className='back6'> */}
+                <div className='news_flex'>
+                        {data
+                            ? data.results.map((news) => (
+    
+                                <NewsArticle  data={news} key={news.image_url} />
+                            ))
+                            : "Loading"}            </div>
+    
+                    {/* </div> */}
+                    {/* <div className='row back6'>
+                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                     <div className='col-3 new_imgp'>
+                     <img src={new_img}></img>
+    
+                     </div>
+    
+                 </div>
+                 <div className='row back6'>
+                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                     <div className='col-3 new_imgp'>
+                     <img src={new_img}></img>
+    
+    
+                 </div>
+                 </div>
+    
+                 <div className='row back6'>
+                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                     <div className='col-3 new_imgp'>
+                     <img src={new_img}></img>
+    
+                     </div>
+    
+                 </div>
+    
+                 <div className='row back6'>
+                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                     <div className='col-3 new_imgp'>
+                     <img src={new_img}></img>
+    
+                     </div>
+    
+                 </div>
+    
+                 <div className='row back6'>
+                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                     <div className='col-3 new_imgp'>
+                     <img src={new_img}></img>
+    
+                     </div>
+    
+                 </div>
+    
+    
+                 <div className='row back6'>
+                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                     <div className='col-3 new_imgp'>
+                     <img src={new_img}></img>
+    
+                     </div>
+    
+                 </div>
+    
+    
+                 <div className='row back6'>
+                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
+                     <div className='col-3 new_imgp'>
+                     <img src={new_img}></img>
+    
+                     </div>
+    
+                 </div> */}
+    
+                <div className='row bottom_bar'>
+                    <div className='col-2 home_image'>
+                        <img src={home}></img>
+    
+                    </div>
+                    <div className='col-1'></div>
+                    <div className='col-1'>
+                        <img src={orders}></img>
+                        
+                    </div>
+                    <div className='col-1'></div>
+                    <div className='col-2 reverse_image'>
+                        <img src={reverse} className='swap'></img>
+                    </div>
+                    <div className='col-1'></div>
+                    <div className='col-2'>
+                        <img src={portfolio}></img>
+                    </div>
+                    <div className='col-2 wallet_image'>
+                        <img src={wallet}></img>
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+        )
+    
+    }
 }
 
 export default Home_page;

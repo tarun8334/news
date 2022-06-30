@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /home/tarun/.yarn/bin/yarn.js add mdbootstrap --force
+  /usr/local/bin/node /home/tarun/.yarn/bin/yarn.js install
 
 PATH: 
   /home/tarun/.yarn/bin:/home/tarun/.config/yarn/global/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin

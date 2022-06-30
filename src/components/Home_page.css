@@ -85,8 +85,8 @@ color: #7661F6;
 
 }
 
-.top_option_coin{
-    font-family: 'Gilroy-Regular';
+.top_option_coin1{
+font-family: 'Gilroy-Regular' !important;
 font-size: 14px;
 line-height: 12px;
 /* identical to box height, or 100% */
@@ -94,10 +94,10 @@ padding:18px;
 text-align: center;
 letter-spacing: 0.1em;
 /* border-radius: 12px; */
-
 /* color: #F8F9FA; */
+
 }
-.top_option_news{
+.top_option_news1{
     font-family: 'Gilroy-Regular';
     font-size: 14px;
     line-height: 12px;
@@ -110,6 +110,18 @@ letter-spacing: 0.1em;
     /* border-radius: 12px; */
 
     
+}
+.c1n{
+    color: #F8F9FA;
+    border-radius: 12px;
+
+}
+.c1c{
+    color: #B9C1D9;
+    background-color:  #161A33;
+background-size: 100%;
+z-index: 1;
+
 }
 .home_image{
 /* margin-left: -20px; */
@@ -188,18 +200,97 @@ width  : 100%;
 overflow: scroll;
 }
 
-.color56{
+.back61{
+    height : 8vh;
+    
+        background: #252A4D;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    }
+    
+
+    .crypto_img{
+        align-items: center;
+        padding-left: -10px;
+        padding-top: 10px;
+        padding-right: -10px;
+        padding-bottom: 0px;
+        margin-bottom: 100px;
+        margin-right: -10px;
+        width: 5vh;
+        height: 5vh;
+        margin-left: -10px;
+        border-radius: 4px;
+    }
+
+
+    .coin_row_name{
+        font-family: 'Gilroy-Medium';
+left: 0;
+/* background */
+
+color: #FFFFFF;
+
+
+    }
+
+
+    .coin_row_pricing{
+        font-family: 'Gilroy-Medium';
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        
+        /* background */
+        
+        color: #FFFFFF;
+    }
+
+.spc{
+    width:10px;
+}
+
+
+
+
+.font_name_coin{
+    height: 1vh
+}
+.padd123{
+padding-right: 0;
+}
+.padd321{
+    padding-left: 0;
+    padding-top: 7px;
+}
+.buy_btn{
     background: #161A33;
-    border-radius: 12px;
-
+border: 1px solid #8885FB;
+border-radius: 6px;
+height: 5vh;
+width: 18vw;
+margin-top: 1vh;
 }
-.color55{
-    background: #252A4D;
-    border-radius: 12px;
-    /* font-family: 'Gilroy-SemiBold'; */
-
+.buybtntext{
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    /* identical to box height */
+    
+    text-align: center;
+margin-top: 1vh;
+    color: #8885FB;
+    
 }
-.t123{
-        font-family: 'Gilroy-SemiBold';
 
+.name_short{
+    font-size: 12px;
+    line-height: 14px;
+    height: 1vh
 }

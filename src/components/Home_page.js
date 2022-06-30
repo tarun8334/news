@@ -22,17 +22,27 @@ import Topcoins from './Topcoins';
 export const NewsContext = createContext();
 function Home_page() {
     const [data, setData] = useState();
+    const [data1, setData1] = useState();
 
     // const apiKey = "1c31e0e165df4c1fa4137f14a41db9ca";
     useEffect(() => {
         axios
             .get(
-               `https://newsdata.io/api/1/news?apikey=pub_872241608586560e6ce3e3865b639462ad74&country=in`           )
+               `https://newsdata.io/api/1/news?apikey=pub_8723b5e783532c0b629b6b9fd696dece2d01&country=in`  
+                     )
             .then((response) => setData(response.data))
             .catch((error) => console.log(error));
     }, []);
 
-
+    useEffect(() => {
+        axios
+            .get(
+                `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false`
+                  )
+                            .then((response) => setData1(response.data))
+            .catch((error) => console.log(error));
+    }, []);
+    
     const handlechange = () => {
         console.log("hello");
     }
@@ -42,7 +52,7 @@ function Home_page() {
       var a = true;
       setSwap(a);
     }
-  
+    console.log(data1);
     function Newsb() {
         var a = false;
         setSwap(a);
@@ -75,13 +85,20 @@ if(swap == true){
                 </div>
             </div>
             <div className='row top_option'>
-                 <div className='col-6  top_option_coin color55 t123' onClick={() => Coinb()}>TOP COINS</div>
+                 <div className='col-6  top_option_coin1 c1n' onClick={() => Coinb()}>TOP COINS</div>
                  {/* <div className='col-1'></div> */}
-                 <div className='col-6 top_option_news color56' onClick={() => Newsb()}>TOP NEWS</div>
+                 <div className='col-6 top_option_news1 c1c' onClick={() => Newsb()}>TOP NEWS</div>
              </div>
-             <div className='news_flex'>
-                      <Topcoins></Topcoins>
-                                </div>
+             
+
+                                <div className='news_flex'>
+                        {data1
+                            ? data1.map((coin) => (
+    
+                                <Topcoins  data1={coin} key={coin.image} />
+                            ))
+                            : "Loading"}            </div>
+
             {/* <div className='row'>
                 <div className='col-6 story_heading'>Top Stories</div>
                 <div className='col-5'></div>
@@ -217,8 +234,8 @@ if(swap == true){
                     </div>
                 </div>
                 <div className='row top_option'>
-                <div className='col-6  top_option_coin color56' onClick={() => Coinb()}>TOP COINS</div>
-                 <div className='col-6 top_option_news color55 t123' onClick={() => Newsb()}>TOP NEWS</div>
+                <div className='col-6  top_option_coin1 c1c' onClick={() => Coinb()}>TOP COINS</div>
+                 <div className='col-6 top_option_news1 c1n' onClick={() => Newsb()}>TOP NEWS</div>
                  </div>
     
                 <div className='row'>

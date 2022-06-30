@@ -217,16 +217,24 @@ overflow: scroll;
 
     .crypto_img{
         align-items: center;
-        padding-left: -10px;
-        padding-top: 10px;
+         padding-left: -10px;
+        padding-top: 1.2vh;
         padding-right: -10px;
+        /* padding-top:px; */
         padding-bottom: 0px;
         margin-bottom: 100px;
-        margin-right: -10px;
+        /* margin-right: -10px;  */
+        margin-left: -0.7vh;
         width: 5vh;
         height: 5vh;
-        margin-left: -10px;
         border-radius: 4px;
+        /* margin-top: 1vh; */
+/* padding-right: 1vh;
+padding-left: -1vh;
+margin-left: 0.5vh;
+margin-right: 1vh; */
+        /* margin-left: -10px;
+         */
     }
 
 

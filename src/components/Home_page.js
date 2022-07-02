@@ -18,6 +18,7 @@ import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import NewsArticle from './NewsArticle';
 import Topcoins from './Topcoins';
+import Bottom_bar from './Bottom_bar';
 
 export const NewsContext = createContext();
 function Home_page() {
@@ -28,7 +29,7 @@ function Home_page() {
     useEffect(() => {
         axios
             .get(
-               `https://newsdata.io/api/1/news?apikey=pub_8723b5e783532c0b629b6b9fd696dece2d01&country=in`  
+               `https://newsdata.io/api/1/news?apikey=pub_8723b5e783532c0b629b6b9fd696dece2d01&country=in&category=technology`  
                      )
             .then((response) => setData(response.data))
             .catch((error) => console.log(error));
@@ -74,6 +75,7 @@ if(swap == true){
                     <img src={dollar}></img>
                 </div>
             </div>
+            <div>
             <div className='upper_box'>
                 <div className='row upper_box_text1'>Invite and Earn $10 worth Bitcoin!</div>
                 <div className='row upper_box_text2'>Earn $10 worth of BTC whenever your friend makes their first trade on dripp. </div>
@@ -83,6 +85,7 @@ if(swap == true){
                     </div>
                     <div className='col-8'></div>
                 </div>
+            </div>
             </div>
             <div className='row top_option'>
                  <div className='col-6  top_option_coin1 c1n' onClick={() => Coinb()}>TOP COINS</div>
@@ -181,7 +184,7 @@ if(swap == true){
 
              </div> */}
 
-            <div className='row bottom_bar'>
+            {/* <div className='row bottom_bar'>
                 <div className='col-2 home_image'>
                     <img src={home}></img>
 
@@ -203,7 +206,8 @@ if(swap == true){
                     <img src={wallet}></img>
                 </div>
 
-            </div>
+            </div> */}
+  <Bottom_bar></Bottom_bar>
 
 
         </div>
@@ -321,7 +325,7 @@ if(swap == true){
     
                  </div> */}
     
-                <div className='row bottom_bar'>
+                {/* <div className='row bottom_bar'>
                     <div className='col-2 home_image'>
                         <img src={home}></img>
     
@@ -343,8 +347,9 @@ if(swap == true){
                         <img src={wallet}></img>
                     </div>
     
-                </div>
-    
+                </div> */}
+      <Bottom_bar></Bottom_bar>
+
     
             </div>
         )

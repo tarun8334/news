@@ -6,6 +6,10 @@
     margin-top: -30px;
     height: 100vh;
     margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
 }
 
 
@@ -144,7 +148,10 @@ align-items: center;
 .bottom_bar{
     align-items: center;
     /* height: 15%; */
-    bottom: 0px;
+    margin-bottom: 0px;
+    position:sticky;
+    margin-top: 0px;
+    justify-self: flex-end;
 }
 
 .swap{
@@ -301,4 +308,18 @@ margin-top: 1vh;
     font-size: 12px;
     line-height: 14px;
     height: 1vh
+}
+
+
+.img_photu{
+padding-top: 1.3vh;
+}
+
+.low-risk{
+ color: green !important;
+}
+
+
+.high-risk{
+    color: red !important;
 }

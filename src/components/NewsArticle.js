@@ -10,7 +10,7 @@ function NewsArticle({ data }) {
       {/* <span className="news__author">{data.author}</span> <br /> */}
       {/* <span className="news__published">{data.publishedAt}</span> */}
       {/* <span className="news__source">{data.source.name}</span> */}
-      <div className='col-3 '>
+      <div className='col-3 img_photu'>
           {/* <div></div> */}
                  <img className="new_imgp" src={data.image_url}></img>
 

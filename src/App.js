@@ -11,7 +11,9 @@ function App() {
   //  <Qr></Qr>
   // <Send></Send>
   <div>
-  <Home_page></Home_page>
+     <Qr></Qr>
+     {/* <Send></Send> */}
+  {/* <Home_page></Home_page> */}
   </div>
   );
 }

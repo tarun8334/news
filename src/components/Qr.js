@@ -23,6 +23,7 @@ function Qr() {
                 Recieve tokens
                 </div>
             </div>
+            <div className='bgdr'>
             <div className='qrcode_display'>
                 <div className='row coin_image_row'>
                     <div className='col-5'></div>
@@ -33,9 +34,9 @@ function Qr() {
 
                 </div>
                 <div className='row scan_text'>
-                    <div className='col-1'></div>
-                    <div className='col-10'>Scan the QR code to recieve Solana.</div>
-                <div className='col-1'></div>
+                    {/* <div className='col-1'></div> */}
+                    <div >Scan the QR code to recieve Solana.</div>
+                {/* <div className='col-1'></div> */}
                 </div>
                 
                 <div className='row qr_photo'>
@@ -68,17 +69,20 @@ function Qr() {
                     <div className='col-1'></div>
                 </div>
                 <div className='row copy_add'>
-                    <div className='col-4'></div>
-                    <div className='col-4 copy_box' onClick={() => handlechange()}>
+                    <div className='col-3'></div>
+                    <div className='col-6 copy_box' onClick={() => handlechange()}>
                     <div className='copy_text'>Copy Address</div>
                     </div>
-                    <div className='col-4'></div>
+                    <div className='col-3'></div>
                 </div>
-                <div className='spacing'></div>
+                </div>
+                <div className='bgd123'>
+                {/* <div className='spacing'></div> */}
                 <div className='row share_button'onClick={() => handlechange()}>
                 <div className='share_text'>Share Address</div>
                 </div>
                 <div className='spacing_2'></div>
+            </div>
             </div>
         </div>
     )

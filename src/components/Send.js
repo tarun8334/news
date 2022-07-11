@@ -32,7 +32,7 @@ function Send() {
                     <img src={coin} className='coin_image1' />
 
                 </div>
-                <div className='col-6'>
+                <div className='col-7'>
                     <div className='row text_solana'>Solana</div>
                     <div className='row name_solana'>SOL</div>
                 </div>

@@ -64,7 +64,7 @@ if(swap == true){
 
     return (
         <div className='back3'>
-            {console.log(data)}
+            {/* {console.log(data)} */}
 
             <div className='row top_bar'>
                 <div className='col-1 polygon'>
@@ -94,7 +94,7 @@ if(swap == true){
              </div>
              
 
-                                <div className='news_flex'>
+                                <div className='coin_flex'>
                         {data1
                             ? data1.map((coin) => (
     
@@ -215,8 +215,8 @@ if(swap == true){
     }else{
 
         return (
-            <div className='back3'>
-                {console.log(data)}
+            <div className='main'>
+                {/* {console.log(data)} */}
     
                 <div className='row top_bar'>
                     <div className='col-1 polygon'>

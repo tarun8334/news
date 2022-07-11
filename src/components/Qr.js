@@ -77,7 +77,7 @@ function Qr() {
                 </div>
                 </div>
                 <div className='bgd123'>
-                {/* <div className='spacing'></div> */}
+                <div className='spacing'></div>
                 <div className='row share_button'onClick={() => handlechange()}>
                 <div className='share_text'>Share Address</div>
                 </div>

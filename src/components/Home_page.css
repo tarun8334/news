@@ -1,18 +1,37 @@
 @import url(https://db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
 @import url(https://db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium);
 @import url(https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold);
+*{
+    /* margin: 0px !important; */
+    /* padding: 0px !important; */
+}
 .back3{
     background: #0E1327;
     margin-top: -30px;
-    height: 100vh;
-    margin-bottom: 0px;
+    height: auto;
+    margin-bottom: 0px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: space-around;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* bottom: 10px !important; */
 }
 
+.main{
+    background: #0E1327;
+    margin-top: -30px;
+    height: auto;
+    margin-bottom: 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    overflow-y: hidden !important;
+    overflow-x: hidden;
 
+}
 .polygon{
     margin-left:-30px;
 }
@@ -147,6 +166,8 @@ align-items: center;
 
 .bottom_bar{
     align-items: center;
+    position: sticky;
+    z-index: 2;
     /* height: 15%; */
     margin-bottom: 0px;
     position:sticky;
@@ -203,6 +224,15 @@ margin-bottom: 20px;
 }
 .news_flex{
     height : 42vh;
+    z-index: 1;
+    /* height: auto; */
+width  : 100%;
+overflow: scroll;
+}
+.coin_flex{
+    height : 52vh;
+    z-index: 1;
+    /* height: auto; */
 width  : 100%;
 overflow: scroll;
 }
@@ -215,6 +245,8 @@ overflow: scroll;
     padding-top: 5px;
     padding-right: 10px;
     padding-left: 10px;
+    /* margin: auto; */
+    /* margin-bottom: auto; */
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 0px;

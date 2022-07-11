@@ -2,7 +2,7 @@
 @import url(https://db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium);
 @import url(https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold);
 .back2{
-background :#161A33;
+    background: #0E1327;
 margin-top: -30px;
 
 }
@@ -157,4 +157,7 @@ color: #B9C1D9;
     
     .spacing_21{
         padding: 2px;
+    }
+    .entry_display{
+        background: #161A33;
     }

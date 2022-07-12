@@ -80,10 +80,10 @@ if(swap == true){
                 <div className='row upper_box_text1'>Invite and Earn $10 worth Bitcoin!</div>
                 <div className='row upper_box_text2'>Earn $10 worth of BTC whenever your friend makes their first trade on dripp. </div>
                 <div className='row upper_box_button'>
-                    <div className='col-4 upper_box_button2'>
+                    <div className='col-6 upper_box_button2'>
                         Invite Friends
                     </div>
-                    <div className='col-8'></div>
+                    <div className='col-6'></div>
                 </div>
             </div>
             </div>
@@ -126,10 +126,10 @@ if(swap == true){
                     <div className='row upper_box_text1'>Invite and Earn $10 worth Bitcoin!</div>
                     <div className='row upper_box_text2'>Earn $10 worth of BTC whenever your friend makes their first trade on dripp. </div>
                     <div className='row upper_box_button'>
-                        <div className='col-4 upper_box_button2'>
+                        <div className='col-6 upper_box_button2'>
                             Invite Friends
                         </div>
-                        <div className='col-8'></div>
+                        <div className='col-6'></div>
                     </div>
                 </div>
                 <div className='row top_option'>

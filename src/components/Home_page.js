@@ -102,111 +102,6 @@ if(swap == true){
                             ))
                             : "Loading"}            </div>
 
-            {/* <div className='row'>
-                <div className='col-6 story_heading'>Top Stories</div>
-                <div className='col-5'></div>
-                <div className='col-1'>
-                    <img src={refresh}></img>
-
-                </div>
-
-            </div>
-            <div className='news_flex'>
-                    {data
-                        ? data.results.map((news) => (
-
-                            <NewsArticle  data={news} key={news.image_url} />
-                        ))
-                        : "Loading"}            </div> */}
-
-                {/* </div> */}
-                {/* <div className='row back6'>
-                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                 <div className='col-3 new_imgp'>
-                 <img src={new_img}></img>
-
-                 </div>
-
-             </div>
-             <div className='row back6'>
-                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                 <div className='col-3 new_imgp'>
-                 <img src={new_img}></img>
-
-
-             </div>
-             </div>
-
-             <div className='row back6'>
-                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                 <div className='col-3 new_imgp'>
-                 <img src={new_img}></img>
-
-                 </div>
-
-             </div>
-
-             <div className='row back6'>
-                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                 <div className='col-3 new_imgp'>
-                 <img src={new_img}></img>
-
-                 </div>
-
-             </div>
-
-             <div className='row back6'>
-                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                 <div className='col-3 new_imgp'>
-                 <img src={new_img}></img>
-
-                 </div>
-
-             </div>
-
-
-             <div className='row back6'>
-                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                 <div className='col-3 new_imgp'>
-                 <img src={new_img}></img>
-
-                 </div>
-
-             </div>
-
-
-             <div className='row back6'>
-                 <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                 <div className='col-3 new_imgp'>
-                 <img src={new_img}></img>
-
-                 </div>
-
-             </div> */}
-
-            {/* <div className='row bottom_bar'>
-                <div className='col-2 home_image'>
-                    <img src={home}></img>
-
-                </div>
-                <div className='col-1'></div>
-                <div className='col-1'>
-                    <img src={orders}></img>
-                    
-                </div>
-                <div className='col-1'></div>
-                <div className='col-2 reverse_image'>
-                    <img src={reverse} className='swap'></img>
-                </div>
-                <div className='col-1'></div>
-                <div className='col-2'>
-                    <img src={portfolio}></img>
-                </div>
-                <div className='col-2 wallet_image'>
-                    <img src={wallet}></img>
-                </div>
-
-            </div> */}
   <Bottom_bar></Bottom_bar>
 
 
@@ -227,7 +122,7 @@ if(swap == true){
                         <img src={dollar}></img>
                     </div>
                 </div>
-                <div className='upper_box'>
+                <div className='upper_box_news'>
                     <div className='row upper_box_text1'>Invite and Earn $10 worth Bitcoin!</div>
                     <div className='row upper_box_text2'>Earn $10 worth of BTC whenever your friend makes their first trade on dripp. </div>
                     <div className='row upper_box_button'>
@@ -242,8 +137,8 @@ if(swap == true){
                  <div className='col-6 top_option_news1 c1n' onClick={() => Newsb()}>TOP NEWS</div>
                  </div>
     
-                <div className='row'>
-                    <div className='col-6 story_heading'>Top Stories</div>
+                <div className='row story_heading'>
+                    <div className='col-6 story_heading_text'>Top Stories</div>
                     <div className='col-5'></div>
                     <div className='col-1'>
                         <img src={refresh}></img>
@@ -260,94 +155,6 @@ if(swap == true){
                             ))
                             : "Loading"}            </div>
     
-                    {/* </div> */}
-                    {/* <div className='row back6'>
-                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                     <div className='col-3 new_imgp'>
-                     <img src={new_img}></img>
-    
-                     </div>
-    
-                 </div>
-                 <div className='row back6'>
-                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                     <div className='col-3 new_imgp'>
-                     <img src={new_img}></img>
-    
-    
-                 </div>
-                 </div>
-    
-                 <div className='row back6'>
-                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                     <div className='col-3 new_imgp'>
-                     <img src={new_img}></img>
-    
-                     </div>
-    
-                 </div>
-    
-                 <div className='row back6'>
-                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                     <div className='col-3 new_imgp'>
-                     <img src={new_img}></img>
-    
-                     </div>
-    
-                 </div>
-    
-                 <div className='row back6'>
-                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                     <div className='col-3 new_imgp'>
-                     <img src={new_img}></img>
-    
-                     </div>
-    
-                 </div>
-    
-    
-                 <div className='row back6'>
-                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                     <div className='col-3 new_imgp'>
-                     <img src={new_img}></img>
-    
-                     </div>
-    
-                 </div>
-    
-    
-                 <div className='row back6'>
-                     <div className='col-9 head_news'>Solana have jumped by 40% over the last two days despite increased threat of hackers.</div>
-                     <div className='col-3 new_imgp'>
-                     <img src={new_img}></img>
-    
-                     </div>
-    
-                 </div> */}
-    
-                {/* <div className='row bottom_bar'>
-                    <div className='col-2 home_image'>
-                        <img src={home}></img>
-    
-                    </div>
-                    <div className='col-1'></div>
-                    <div className='col-1'>
-                        <img src={orders}></img>
-                        
-                    </div>
-                    <div className='col-1'></div>
-                    <div className='col-2 reverse_image'>
-                        <img src={reverse} className='swap'></img>
-                    </div>
-                    <div className='col-1'></div>
-                    <div className='col-2'>
-                        <img src={portfolio}></img>
-                    </div>
-                    <div className='col-2 wallet_image'>
-                        <img src={wallet}></img>
-                    </div>
-    
-                </div> */}
       <Bottom_bar></Bottom_bar>
 
     
